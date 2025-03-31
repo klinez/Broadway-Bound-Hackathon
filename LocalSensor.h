@@ -1,8 +1,9 @@
+//File kindly donated by Noah Ross
+
 #ifndef LOCAL_SENSOR_H
 #define LOCAL_SENSOR_H
 
-#include <Arduino.h>
-#include <DHT.h>
+#include <dht.h>
 
 class LocalSensor
 {

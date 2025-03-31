@@ -1,3 +1,5 @@
+//File kindly donated by Noah Ross
+
 #include "LocalSensor.h"
 
 LocalSensor::LocalSensor(uint8_t pin, uint8_t type) : dht(pin, type) {}
