@@ -1,0 +1,28 @@
+int tempSet = 60;
+int pickedTemp;
+int aState;
+int bState;
+int prevAState;
+int buttonState;
+bool raise;
+
+void setup(){
+    //connect inputs to state variables here
+}
+
+void loop(){
+    if(prevAState != aState){
+        if(bState != aState){
+            tempSet++;
+            raise = false;
+        }
+        else{
+            tempSet--;
+            raise = true;
+        }
+    }
+    if(buttonState == HIGH){
+        pickedTemp = tempSet;
+    }
+    prevAState = aState;
+}
