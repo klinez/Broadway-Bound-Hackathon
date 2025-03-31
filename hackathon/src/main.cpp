@@ -29,11 +29,8 @@ void loop() {
   double temperature = localSensor.getTemperature();
   double humidity = localSensor.getHumidity();
 
-  // Print the results to the serial monitor
-
-
-  //hard-code temp threshold for now
-  double TEMP_THRESHOLD = 25.0;
+    // Print the results to the serial monitor
+  Serial.println(temperature);
 
   // Check temperature and control LED
   if (temperature >= TEMP_THRESHOLD) {
